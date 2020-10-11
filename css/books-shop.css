@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.5s ease;
+}
+.container-books-table {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.header-books-table {
+    font-family: 'Tangerine', cursive;
+    font-size: 44px;
+    color: #5f5f5f;
+    padding: 2% 0;
+    margin: 0;
+}
+.books-table {
+    margin: 0 auto;
+}
+
+.books-table-tbody-header {
+    font-size: 66px;
+    color: #5f5f5f;
+    padding: 2% 0;
+    margin: 0;
+}
+.table-div {
+    padding: 10px 20px;
+    background: #e7e7e7;
+    font-size: 24px;
+}
+.table-div-action {
+    padding: 10px 20px;
+    background: #d2d2d2;
+    font-size: 24px;
+}
+.btn {
+    padding: 10px 20px;
+    margin: 4px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+}
+.add {
+    background-color: #007bff;
+}
+.read {
+    background-color: #007bff;
+}
+.update {
+    background-color: #28a745;
+}
+.delete {
+    background-color: #dc3545;
+}
+
+.input-name {
+    padding: 11px 10px;
+    border-radius: 5px;
+    border: 1px solid #868686;
+    font-size: 16px;
+    margin: 4px;
+}
+
+.input-price {
+    padding: 11px 10px;
+    border-radius: 5px;
+    border: 1px solid #868686;
+    font-size: 16px;
+    margin: 4px;
+}
+.container-update-price-modal {
+    position: fixed;
+    top: 200px; /* or whatever position is desired */
+    left: 0;
+    right: 0;
+    height: 0;
+    /* center all inline content */
+    text-align: center;
+}
+.update-price-modal {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    background: #28a745eb;
+    padding: 50px;
+    border-radius: 5px;
+}
+.close {
+    position: absolute;
+    color: #000;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 5px 10px;
+    top: 0;
+    right: 0;
+}
+.next-page{
+    color:#000;
+}
+
+.container-book-details {
+    opacity: 0;
+    background: #4190e7;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.book-details {
+    !opacity: 0;
+}
+.displayBlock {
+    display: block !important;
+}
+
+.displayNone {
+    display: none;
+}
+.opacityShow {
+    opacity: 100;
+}
+.book-stats {
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    margin: 10px auto;
+}
+.rateMinus {
+    color: #000;
+    padding: 0px 10px;
+    font-weight: 900;
+}
+
+.ratePlus {
+    color: #000;
+    padding: 0px 10px;
+    font-weight: 900;
+}
+
+.container-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-numbers {
+    font-weight: 600;
+    color: #000;
+}

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> </style>
+    <link rel="stylesheet" href="css/books-shop.css" />
+</head>
+
+<body>
+
+    <div class="container-books-table">
+        <h4 class="header-books-table">Book store</h4>
+
+        <div hidden class="container-update-price-modal">
+            <div class="update-price-modal">
+                <input name="update-input-price" placeholder="Update Book Price" class="input-price" />
+                <button class="btn update" onClick="onUpdateBook('${currentBook.id}')">Update</button>
+                <button class="btn close" onClick="updateBookModalHide()">X</button>
+            </div>
+        </div>
+        <table class="books-table">
+            <input name="input-name" placeholder="Book Name..." class="input-name" />
+            <input name="input-price" placeholder="Book Price" class="input-price" />
+            <button class="btn add" onClick="onAddBook()">Add Book</button>
+            <tbody class="books-table-tbody-header">
+                <tr class='table-row'>
+                    <td class='table-div' onClick="onSortById()">Id </td>
+                    <td class='table-div' onClick="onSortByName()">Title</td>
+                    <td class='table-div' onClick="onSortByPrice()">Price</td>
+                    <td class='table-div'>action </td>
+                </tr>
+            </tbody>
+            <tbody class="books-table-tbody"></tbody>
+        </table>
+        <div class="container-pagination">
+            <button class="btn next-page" onclick="onNextPage()">Next Page</button>
+            <div class="pagination-pages"></div>
+        </div>
+            <div class="container-book-details">
+            <button class="btn close" onClick="onCloseBookDetails()">X</button>
+            <div class="book-details"></div>
+        </div>
+    </div>
+
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-shop-controller.js"></script>
+
+
+</body>
+
+</html>
